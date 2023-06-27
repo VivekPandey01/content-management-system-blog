@@ -1,0 +1,145 @@
+/* Login css */
+
+* {
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.auth-wrapper {
+    min-height: 100vh;
+    position: relative;
+}
+
+.auth-wrapper .auth-box {
+    background: #fff;
+    padding: 20px;
+    -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+    max-width: 400px;
+    width: 90%;
+    margin: 10% 0;
+}
+
+.auth-wrapper .auth-box .logo {
+    text-align: center;
+}
+
+.auth-wrapper .auth-box.on-sidebar {
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    margin: 0px;
+    position: absolute;
+}
+
+.auth-wrapper #recoverform {
+    display: none;
+}
+
+.auth-wrapper .auth-sidebar {
+    position: fixed;
+    height: 100%;
+    right: 0px;
+    overflow: auto;
+    margin: 0px;
+    top: 0px;
+}
+
+@media (max-width: 767px) {
+    .auth-wrapper .auth-sidebar {
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        margin: 40px 0 60px;
+    }
+
+    .auth-wrapper .demo-text {
+        margin-top: 30px;
+    }
+}
+
+.p-b-30 {
+    padding-bottom: 30px;
+}
+
+.p-t-20 {
+    padding-top: 20px;
+}
+
+.m-t-20 {
+    margin-top: 20px;
+}
+
+.m-t-10 {
+    margin-top: 8px;
+}
+
+.response-wrapper {
+    width: 100%;
+    height: 30px;
+    padding: 3px;
+    text-align: center;
+}
+
+.field_empty {
+    color: #f7a642;
+    font-weight: bold;
+}
+
+.field_res {
+    color: #f05f46;
+    font-weight: bold;
+}
+
+.load-wrapp {
+    text-align: center;
+    display: none;
+}
+
+.bar {
+    width: 15px;
+    height: 6px;
+    border-radius: 2px;
+    background-color: #28b779;
+    margin: auto;
+}
+
+.arload .bar {
+    animation: loadingjump 2s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+}
+
+@keyframes loadingjump {
+
+    0%,
+    100% {
+        transform: translate(-40px, 0);
+    }
+
+    50% {
+        transform: translate(40px, 0);
+        background-color: #f5634a;
+        width: 25px;
+    }
+}
+.eyefield-icon {
+    float: right;
+    margin-top: -43px;
+    margin-right: 12px;
+    position: relative;
+    z-index: 4;
+  }
+
+  .min-ht {
+      min-height: 35px;
+      margin-top: 10px;
+  }
